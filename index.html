@@ -1,16 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17935611031"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17935611031');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17935611031"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17935611031');
+  </script>
   <meta name="google-site-verification" content="1Es1MzVJQGDKQ8Dhm7NHfeyu4GQMOk6aG9-PJ2PKdLs" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,48 +21,64 @@
       line-height: 1.6;
     }
     header {
-  background-image: url("images/Rainbow.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
-  padding: 3rem 1rem;
-  text-align: center;
-}
-   
+      background-image: url("images/Rainbow.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
     header h1 {
       margin: 0;
       font-size: 2.2rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
     }
     header p {
       max-width: 700px;
       margin: 1rem auto 0;
       font-size: 1.1rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     }
     section {
       padding: 2rem 1rem;
       max-width: 900px;
       margin: auto;
     }
-        
     h2 {
       color: #2f6f62;
       margin-top: 0;
+      text-align: center; /* Centered headers for services */
     }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
+    h3 {
+      color: #333;
+      margin-top: 1.5rem;
     }
+    
+    /* Updated Service List Formatting */
+    .services-list-container {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .services-list-container ul {
+      display: inline-block;
+      text-align: left;
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+    .services-list-container li {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
     .card {
       background: #fff;
       padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      margin-bottom: 1.5rem;
     }
-    ul {
-      padding-left: 1.2rem;
-    }
+
     .about {
       background: #ffffff;
       border-left: 5px solid #2f6f62;
@@ -76,25 +89,30 @@
       background: #333;
       color: #fff;
       text-align: center;
-      padding: 1.5rem 1rem;
+      padding: 2rem 1rem;
     }
     footer a {
       color: #9fe0d2;
       text-decoration: none;
     }
-.cta {
-  background: #003366; /* Deep Midnight Blue to match the image */
-  color: #ffffff;
-  padding: 2rem;
-  border-radius: 12px; /* Slightly rounder corners for a modern look */
-  text-align: left; /* Changed to left-aligned to match the image */
-  margin-top: 2rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Adds that soft shadow effect */
-}
-    .cta strong {
-      font-size: 1.2rem;
+
+    /* Updated CTA Box: Midnight Blue */
+    .cta {
+      background: #003366; 
+      color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: left;
+      margin-top: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
-      
+    .cta a {
+      color: #9fe0d2;
+      font-weight: bold;
+    }
+    .cta strong {
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -105,124 +123,103 @@
 </header>
 
 <section>
-  <h2>Call or Email For Free Estimate</h2>
-  <!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick=" Calendly.initPopupWidget({url: 'https://calendly.com/melodygerow/tech-support'}); return false;"> Click here to schedule time with Melody for Technical Support.</a>
-<!-- Calendly link widget end -->
-  <div class="services">
-    
-    <div class="card">   
-         <div class="contact">
-   <p><strong>Need help or have a question?</strong></p>
-  <p>Call, text, or email to talk through what you need — no pressure, no judgment, no question or problem too small!</p>
-   <p>The easiest way to contact me is click my phone number or email below.</p>
-  <p>
-    Email: <a href="mailto:Melody@SLVTechHelp.com">Melody@SLVTechHelp.com</a><br />
-    Phone: <a href="tel:19134069247">913‑406‑9247</a>
-  </p>
-</div>
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/melodygerow/tech-support', text: 'Schedule time with Melody', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-<!-- Calendly badge widget end -->
-   
-       <div class="card">
-      <h3>Online & Remote Services</h3>
-      <ul>
-        <li>Remote programming assistance</li>
-        <li>Software troubleshooting</li>
-        <li>Video call setup (Zoom, FaceTime, Teams)</li>
-        <li>Password help & organization</li>
-        <li>Printer & scanner setup</li>
-      </ul>
-       <h3>Device Setup & Support</h3>
-      <ul>
-        <li>Smartphone & tablet setup</li>
-        <li>Laptop and desktop setup</li>
-        <li>App installation & updates</li>
-        <li>Email & online account setup</li>
-        <li>Bluetooth & Wi‑Fi troubleshooting</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Guided Online Tasks</h3>
-      <ul>
-        <li>Signing up for Social Security (SS)</li>
-        <li>Online forms & applications</li>
-        <li>Account recovery & security basics</li>
-        <li>Cloud backups & photo organization</li>
-      </ul>
-      <p><strong>:</strong></p>
-    </div>
+  <h2>Technical Support & Online Tasks</h2>
+  
+  <div class="card services-list-container">
+    <h3>Online & Remote Services</h3>
+    <ul>
+      <li>Remote programming assistance</li>
+      <li>Software troubleshooting</li>
+      <li>Video call setup (Zoom, FaceTime, Teams)</li>
+      <li>Password help & organization</li>
+      <li>Printer & scanner setup</li>
+    </ul>
+
+    <h3>Device Setup & Support</h3>
+    <ul>
+      <li>Smartphone & tablet setup</li>
+      <li>Laptop and desktop setup</li>
+      <li>App installation & updates</li>
+      <li>Email & online account setup</li>
+      <li>Bluetooth & Wi-Fi troubleshooting</li>
+    </ul>
+
+    <h3>Guided Online Tasks</h3>
+    <ul>
+      <li>Signing up for Social Security (SS)</li>
+      <li>Online forms & applications</li>
+      <li>Account recovery & security basics</li>
+      <li>Cloud backups & photo organization</li>
+    </ul>
+  </div>
+
+  <div class="card" style="text-align: center;">
+    <p><strong>Need help or have a question?</strong></p>
+    <p>Call, text, or email to talk through what you need — no pressure, no judgment!</p>
+    <p>
+      Email: <a href="mailto:Melody@SLVTechHelp.com">Melody@SLVTechHelp.com</a><br />
+      Phone: <a href="tel:19134069247">913-406-9247</a>
+    </p>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melodygerow/tech-support'}); return false;">Click here to schedule time with Melody for Technical Support.</a>
   </div>
 </section>
 
 <section>
   <h2>Everyday Help & Errands</h2>
-  <!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melodygerow/dog-sitting-dog-walking'});return false;">Click her to schedule time with Melody for Household Assistance</a>
-<!-- Calendly link widget end -->
-  <div class="services">
-    <div class="card">
-      <ul>
-        <li>Dog walking & dog sitting</li>
-        <li>House cleaning & light organizing</li>
-        <li>Grocery pickup & deliveries</li>
-        <li>Prescription pickup</li>
-        <li>Errands & general help around town</li>
-        <li>Friendly check‑ins for seniors</li>
-      </ul>
-      <p><strong>Rate:</strong> $30 per hour</p>
-    </div>
+  <div class="card services-list-container">
+    <ul>
+      <li>Dog walking & dog sitting</li>
+      <li>House cleaning & light organizing</li>
+      <li>Grocery pickup & deliveries</li>
+      <li>Prescription pickup</li>
+      <li>Errands & general help around town</li>
+      <li>Friendly check-ins for seniors</li>
+    </ul>
+    <p><strong>Rate:</strong> $30 per hour</p>
+    <br>
+    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melodygerow/dog-sitting-dog-walking'});return false;">Click here to schedule time for Household Assistance</a>
   </div>
 </section>
 
 <section>
   <h2>About Me</h2>
   <div class="about">
-  <p>
-    I’ve worked in technology for over <strong>30 years</strong> and believe everyone deserves access to clear,
-    respectful, and jargon‑free help. My goal is to share my experience with the
-    <strong>San Luis Valley</strong> community — helping neighbors feel confident using technology and supported
-    with everyday tasks.
-  </p>
-  <p>
-    I bring a community‑first approach with professional experience — patient, reliable, and always moving
-    at <em>your</em> pace.
-  </p>
-</div>
+    <p>
+      I’ve worked in technology for over <strong>30 years</strong> and believe everyone deserves access to clear,
+      respectful, and jargon-free help. My goal is to share my experience with the
+      <strong>San Luis Valley</strong> community — helping neighbors feel confident using technology and supported
+      with everyday tasks.
+    </p>
+    <p>
+      I bring a community-first approach with professional experience — patient, reliable, and always moving
+      at <em>your</em> pace.
+    </p>
+  </div>
 
   <div class="cta">
-  <p><strong>Rates & Travel</strong></p>
-  <p>
-    Household chores & errands: <strong>$30/hour</strong><br />
-
-  </p>
-  <p>
-    A travel fee may apply outside of <strong>Crestone</strong> and will be determined based on the day’s
-    schedule and distance.
-  </p>
-  <p><strong>Need help or have a question?</strong></p>
-  <p>Call, text, or email to talk through what you need — no pressure, no judgment.</p>
-  <p>
-    Email: <a href="mailto:Melody@SLVTechHelp.com">Melody@SLVTechHelp.com</a><br />
-    Phone: <a href="tel:19134069247">913‑406‑9247</a>
-  </p>
-</div>
+    <h3>Rates & Travel</h3>
+    <p>Household chores & errands: <strong>$30/hour</strong></p>
+    <p>
+      A travel fee may apply outside of <strong>Crestone</strong> and will be determined based on the day’s
+      schedule and distance.
+    </p>
+    <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.2); margin: 1.5rem 0;">
+    <p><strong>Questions?</strong> Call, text, or email to talk through what you need.</p>
+    <p>
+      Email: <a href="mailto:Melody@SLVTechHelp.com">Melody@SLVTechHelp.com</a><br />
+      Phone: <a href="tel:19134069247">913-406-9247</a>
+    </p>
+  </div>
 </section>
 
 <footer>
-  <p>
-    Service Area: Alamosa • Center  • Crestone  • Hooper • Moffat •  Monte Vista • Mosca • Villa Grove and all the towns in between!
-  </p>
+  <p>Service Area: Alamosa • Center • Crestone • Hooper • Moffat • Monte Vista • Mosca • Villa Grove</p>
   <p>Serving the San Luis Valley • Reliable • Local • Friendly</p>
 </footer>
 
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/melodygerow/tech-support', text: 'Schedule time with Melody', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
+
 </body>
 </html>
-
