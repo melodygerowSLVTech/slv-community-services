@@ -72,9 +72,7 @@
 
   text-align: center;
 
-}
-
-   
+}   
 
     header h1 {
 
@@ -153,6 +151,80 @@
       border-radius: 6px;
 
     }
+    
+.intro-hero {
+  background: linear-gradient(to bottom, #ffffff, #f9f6f2);
+  padding: 5rem 1.5rem;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.intro-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  border: 6px solid #ffffff;
+}
+
+.intro-text {
+  max-width: 550px;
+}
+
+.intro-text h1 {
+  font-size: 2.6rem;
+  color: #2f3b52;
+  margin-bottom: 0.5rem;
+}
+
+.intro-text h2 {
+  font-size: 1.4rem;
+  color: #c17c00;
+  margin-bottom: 1.8rem;
+  font-weight: 500;
+}
+
+.intro-questions {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+  color: #444;
+}
+
+.intro-highlight {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2f3b52;
+  margin-bottom: 1rem;
+}
+
+.intro-service {
+  font-size: 1rem;
+  color: #777;
+}    
+
+/* Mobile */
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-image img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
 
     footer {
 
@@ -216,6 +288,35 @@
 
 </header>
 
+<section class="intro-hero">
+  <div class="intro-container">
+
+    <div class="intro-image">
+      <img src="images/Melody.jpg" alt="Melody Gerow - SLV Tech Help">
+    </div>
+
+    <div class="intro-text">
+      <h1>Need Tech Help?</h1>
+      <h2>Your local tech neighbor is here.</h2>
+
+      <p class="intro-questions">
+        Can’t figure out your phone?<br>
+        Need help accessing your calendar?<br>
+        Having trouble with your email?
+      </p>
+
+      <p class="intro-highlight">
+        Friendly, patient, one-on-one tech help for the San Luis Valley.
+      </p>
+
+      <p class="intro-service">
+        Serving Crestone, Alamosa, Monte Vista, and surrounding communities.
+      </p>
+
+    </div>
+
+  </div>
+</section>
 
 
 <section>
